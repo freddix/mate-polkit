@@ -1,11 +1,11 @@
 Summary:	MATE dialogs for polkit
 Name:		mate-polkit
-Version:	1.6.0
+Version:	1.6.1
 Release:	1
 License:	LGPL v2+ (polkit-mate library), GPL v2+ (D-Bus service)
 Group:		X11/Applications
 Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
-# Source0-md5:	a65f909ea2c724ab50a893ba2f8db46c
+# Source0-md5:	12f9171d8c7bf26b815c2274bf64fd46
 URL:		http://people.freedesktop.org/~david/polkit-spec.html
 BuildRequires:	autoconf
 BuildRequires:	automake
