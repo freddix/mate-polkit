@@ -1,23 +1,21 @@
 Summary:	MATE dialogs for polkit
 Name:		mate-polkit
-Version:	1.6.1
+Version:	1.8.0
 Release:	1
 License:	LGPL v2+ (polkit-mate library), GPL v2+ (D-Bus service)
 Group:		X11/Applications
-Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
-# Source0-md5:	12f9171d8c7bf26b815c2274bf64fd46
-URL:		http://people.freedesktop.org/~david/polkit-spec.html
+Source0:	http://pub.mate-desktop.org/releases/1.8/%{name}-%{version}.tar.xz
+# Source0-md5:	bd7dfb225e1ba6aac3c5752d496071d8
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gettext-devel
-BuildRequires:	mate-doc-utils
 BuildRequires:	gtk+-devel
-BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	pkg-config
 BuildRequires:	polkit-devel
+BuildRequires:	yelp-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_libexecdir	%{_libdir}/%{name}
@@ -38,7 +36,6 @@ bring up authentication dialogs used for obtaining privileges.
 
 %build
 %{__intltoolize}
-%{__gtkdocize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
