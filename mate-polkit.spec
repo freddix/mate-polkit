@@ -1,7 +1,7 @@
 Summary:	MATE dialogs for polkit
 Name:		mate-polkit
 Version:	1.8.0
-Release:	1
+Release:	2
 License:	LGPL v2+ (polkit-mate library), GPL v2+ (D-Bus service)
 Group:		X11/Applications
 Source0:	http://pub.mate-desktop.org/releases/1.8/%{name}-%{version}.tar.xz
